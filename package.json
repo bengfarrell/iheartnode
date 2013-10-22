@@ -1,0 +1,8 @@
+{
+    "name": "iheartnode",
+    "author": "ben farrell",
+    "version": "0.1.0",
+    "devDependencies": {
+        "noble": "0.2.1"
+    }
+}
