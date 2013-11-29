@@ -1,0 +1,97 @@
+{
+    "name": "SensorTag",
+    "description": "These values (uuids) are obtained from the SensorTag project by Sandeep Mistry (https://github.com/sandeepmistry/node-sensortag)",
+    "services": {
+        "irtemperature": {
+            "name": "IR Temperature",
+            "id": "irtemperature",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "uuid": "f000aa0004514000b000000000000000",
+            "characteristics": {
+                "config": "f000aa0204514000b000000000000000",
+                "data": "f000aa0104514000b000000000000000"
+            }
+        },
+
+        "accelerometer": {
+            "name": "Accelerometer",
+            "id": "accelerometer",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "uuid": "f000aa1004514000b000000000000000",
+            "characteristics": {
+                "config": "f000aa1204514000b000000000000000",
+                "data": "f000aa1104514000b000000000000000"
+            }
+        },
+
+        "humidity": {
+            "name": "Humidity",
+            "id": "humidity",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "uuid": "f000aa2004514000b000000000000000",
+            "characteristics": {
+                "config": "f000aa2204514000b000000000000000",
+                "data": "f000aa2104514000b000000000000000"
+            }
+        },
+
+        "magnetometer": {
+            "name": "Magnetometer",
+            "id": "magnetometer",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "uuid": "f000aa3004514000b000000000000000",
+            "characteristics": {
+                "config": "f000aa3204514000b000000000000000",
+                "data": "f000aa3104514000b000000000000000"
+            }
+        },
+
+        "barometricpressure": {
+            "name": "Barometric Pressure",
+            "id": "barometricpressure",
+            "uuid": "f000aa4004514000b000000000000000",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "characteristics": {
+                "config": "f000aa4204514000b000000000000000",
+                "data": "f000aa4104514000b000000000000000",
+                "calibration": "f000aa4304514000b000000000000000"
+            }
+        },
+
+        "gyroscope": {
+            "name": "Gyroscope",
+            "id": "gyroscope",
+            "uuid": "f000aa5004514000b000000000000000",
+            "enableCommand": "0x01",
+            "disableCommand": "0x00",
+            "polling": true,
+            "characteristics": {
+                "config": "f000aa5204514000b000000000000000",
+                "data": "f000aa5104514000b000000000000000"
+            }
+        },
+
+        "simplekey": {
+            "name": "Simple Key",
+            "id": "simplekey",
+            "uuid": "ffe0",
+            "polling": false,
+            "characteristics": {
+                "data": "ffe1"
+            }
+        },
+
+        "test": { "name": "Test", "id": "test", "uuid": "f000aa6004514000b000000000000000" },
+        "oad": { "name": "OAD", "id": "oad", "uuid": "f000ffc004514000b000000000000000" }
+    }
+}
