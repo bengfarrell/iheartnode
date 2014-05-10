@@ -1,5 +1,5 @@
 var fs = require('fs');
-var BLEDevice = require('./discovery.js');
+var BLEDevice = require('./bledevice.js');
 var profile = JSON.parse(fs.readFileSync('./profiles/sensortag.json'));
 
 var ble = new BLEDevice();
